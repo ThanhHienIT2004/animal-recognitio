@@ -15,9 +15,9 @@ def RGB(event, x, y, flags, param):
 cv2.namedWindow('RGB')
 cv2.setMouseCallback('RGB', RGB)
 
-model = YOLO("best.pt")
+model = YOLO("../model/best.pt")
 
-cap = cv2.VideoCapture('cow1.mp4')
+cap = cv2.VideoCapture('../data/videos/cow2.mp4')
 my_file = open("coco1.txt", "r")
 data = my_file.read()
 class_list = data.split("\n")
@@ -72,6 +72,6 @@ while True:
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
-# Release video capture and close windows
+# Release videos capture and close windows
 cap.release()
 cv2.destroyAllWindows()
