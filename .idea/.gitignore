@@ -10,10 +10,9 @@
 /httpRequests/
 
 # Virtual Environment
-.venv/
+../.venv/
 venv/
 env/
 
 # Python cache
-__pycache__/
-*.pyc
+../__pycache__/
