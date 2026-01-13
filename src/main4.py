@@ -15,9 +15,9 @@ def RGB(event, x, y, flags, param):
 cv2.namedWindow('RGB')
 cv2.setMouseCallback('RGB', RGB)
 
-model = YOLO("../model/best.pt")
+model = YOLO("../model/best2.pt")
 
-cap = cv2.VideoCapture('../data/videos/cow2.mp4')
+cap = cv2.VideoCapture('../data/videos/cow5.mp4')
 my_file = open("coco1.txt", "r")
 data = my_file.read()
 class_list = data.split("\n")
